@@ -1,3 +1,4 @@
+import CustomerSection from "./components/CustomerSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <FeaturesSection />
       <TechnologySection />
+      <CustomerSection />
     </div>
   );
 }
