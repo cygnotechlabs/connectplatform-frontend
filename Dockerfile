@@ -25,8 +25,9 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Copy custom Nginx configuration file
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 3000 to the outside world
+# Expose port 5173 to the outside world
 EXPOSE 5173
 
 # Start the nginx server
 CMD ["nginx", "-g", "daemon off;"]
+
