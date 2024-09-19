@@ -1,6 +1,5 @@
 # Use an official Node.js runtime as a parent image for building the application
 FROM node:18 AS build
-<<<<<<< HEAD
 
 # Set the working directory in the container
 WORKDIR /app
