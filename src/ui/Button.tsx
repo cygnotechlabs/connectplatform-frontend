@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`rounded-lg bg-blue-500 text-white hover:bg-blue-700 font-medium disabled:bg-gray-400 disabled:cursor-not-allowed ${className}`}
+      className={`rounded-lg bg-[#1585CA] text-white hover:bg-blue-700 font-medium disabled:bg-gray-400 disabled:cursor-not-allowed ${className}`}
       onClick={onClick}
       disabled={disabled}
     >

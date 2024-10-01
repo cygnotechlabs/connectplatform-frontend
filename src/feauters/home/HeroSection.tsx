@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const HeroSection = () => {
   const handleLearnMore = () => {
@@ -16,9 +16,9 @@ const HeroSection = () => {
         </div>
 
         <div className="mx-72">
-          <h1 className="text-sm font-medium text-red-400">
+          {/* <h1 className="text-sm font-medium text-red-400">
             NON-STOP&nbsp;&nbsp;MUSIC&nbsp;&nbsp;FOR&nbsp;&nbsp;LONG&nbsp;&nbsp;TIME
-          </h1>
+          </h1> */}
           <h1 className="text-5xl px-6 my-7 font-semibold mb-5">
             Bridging Teams, Partners, and Innovation
           </h1>

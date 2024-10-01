@@ -1,27 +1,32 @@
-import Button from "../ui/Button";
+import { Link } from "react-router-dom";
+import Button from "../../ui/Button";
 
 const Header = () => {
   const handleGetStarted = () => {
     alert("Get Started");
   };
   return (
-    <header className="mx-6 my-4">
+    <header className="mx-10 my-4">
       <nav className="container flex justify-between items-center">
-        <div className="text-2xl font-bold">Cygnox Connect</div>
-        <ul className="flex gap-8">
-          <li>
+        <div className="text-2xl font-bold">Cygnoz Connect</div>
+        <ul className="flex gap-8 ms-10">
+         <Link to={"/"}>
+         <li>
             <a href="#home" className="font-medium text-base hover:text-blue-500">
               Corporate
             </a>
           </li>
+         </Link>
+          <Link to={"/partners"}>
           <li>
             <a href="#about" className="font-medium text-base hover:text-blue-500">
               Partners
             </a>
           </li>
+          </Link>
           <li>
             <a href="#services" className="font-medium text-base hover:text-blue-500">
-              Customes
+              Customer
             </a>
           </li>
           <li>

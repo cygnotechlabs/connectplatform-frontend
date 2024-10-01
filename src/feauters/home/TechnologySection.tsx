@@ -1,11 +1,11 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const TechnologySection = () => {
   const handleLearnMore = () => {
     alert("Learn More");
   };
   return (
-    <div className="container mx-auto bg-Partnerbg">
+    <div className=" mx-auto bg-Partnerbg">
       <div className="flex flex-col md:flex-row ">
         <div className="w-3/5 px-20 py-16">
           <h2 className="text-xs font-semibold mb-4 text-red-500">
@@ -21,7 +21,7 @@ const TechnologySection = () => {
             </p>
             <Button
               label="Learn More"
-              className="px-14 "
+              className="px-14 h-[59px] "
               onClick={handleLearnMore}
             />
           </div>

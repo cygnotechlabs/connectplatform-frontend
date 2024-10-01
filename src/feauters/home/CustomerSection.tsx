@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const CustomerSection = () => {
   function handleLearnMore(): void {
@@ -6,7 +6,7 @@ const CustomerSection = () => {
   }
 
   return (
-    <div className="container mx-auto   bg-Customerbg">
+    <div className=" mx-auto   bg-Customerbg">
       <div className="flex flex-col pt-20 px-72 items-center ">
         <h2 className="text-xs font-semibold text-center text-red-500">
           C&nbsp;U&nbsp;S&nbsp;T&nbsp;O&nbsp;M&nbsp;E&nbsp;S

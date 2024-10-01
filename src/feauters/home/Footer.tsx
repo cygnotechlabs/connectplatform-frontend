@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 const Footer = () => {
   function handleEmail(): void {
@@ -7,8 +7,8 @@ const Footer = () => {
 
   return (
     <footer className="">
-      <div className="flex justify-between px-60 py-20 text-3xl font-semibold">
-        <p className="mr-16">
+      <div className="flex justify-between px-20 py-20 text-3xl font-bold">
+        <p className="mr-16  text-[#161C2D]">
           Subscribe to our newsletter to get latest news on your inbox.
         </p>
         <div className="flex py-5 gap-3">
@@ -16,16 +16,16 @@ const Footer = () => {
             type="text"
             name="email"
             placeholder="Enter your email"
-            className="text-sm font-normal border-gray-400 px-3 rounded-xl"
+            className="text-sm font-normal border border-gray-200  px-3  rounded-xl"
           />
           <Button
             label="Subscribe"
             onClick={handleEmail}
-            className="px-10 py-3 text-lg"
+            className="px-10 py-3 text-base"
           />
         </div>
       </div>
-      <div className="flex justify-between px-60 py-4 font-semibold">
+      <div className="flex justify-between px-20 py-4 font-bold">
         <p className="text-2xl">Cygnoz Connect</p>
         <div className="flex gap-4 text-sm">
           <p>Privacy Policy</p>

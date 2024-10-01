@@ -1,21 +1,18 @@
-import CustomerSection from "./components/CustomerSection";
-import FeaturesSection from "./components/FeaturesSection";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import TechnologySection from "./components/TechnologySection";
-import Testimonial from "./components/Testimonial";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Partners from "./pages/Partners";
+import Header from "./feauters/home/Header";
+import Footer from "./feauters/home/Footer";
 
 function App() {
   return (
-    <div className="font-rubik">
-      <Header />
-      <HeroSection />
-      <FeaturesSection />
-      <TechnologySection />
-      <CustomerSection />
-      <Testimonial />
-      <Footer />
+    <div>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/partners" element={<Partners/>}/>
+      </Routes>
+      <Footer/>
     </div>
   );
 }
