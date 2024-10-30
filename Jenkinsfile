@@ -31,6 +31,17 @@ pipeline {
             }
         }
 
+        stage('Dependency-Check Analysis') {
+            steps {
+                script {
+                    dependencyCheck additionalArguments: '', 
+                                   odcInstallation: 'Dependency-Check', // Ensure this name matches the configuration in Global Tool Configuration
+                                   outdir: 'dependency-check-report', 
+                                   scanpath: '.'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
