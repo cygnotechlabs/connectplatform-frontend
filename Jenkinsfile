@@ -34,7 +34,7 @@ pipeline {
    stage('Dependency-Check Analysis') {
     steps {
         script {
-            dependencyCheck additionalArguments: '', 
+            dependencyCheck additionalArguments: '-f HTML', 
                             odcInstallation: 'Dependency-Check', // Ensure this name matches the configuration in Global Tool Configuration
                             outdir: 'dependency-check-report', 
                             scanpath: 'src' // Limit scan to the 'src' directory, or specify any other relevant folder
